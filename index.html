@@ -12,9 +12,38 @@
     <script type="module" src="main.js"></script>
     <script type="module" src="snake.js"></script>
     <script type="module" src="utils.js"></script>
+    <script type="module" src="modal.js"></script>
 
 </head>
 <body>
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas" tabindex="0"></canvas>
+    <div id="instructionsModal" class="modal-container">
+        <div  class="modal">
+            <img src="awsd.jpg" alt="An image of the A-W-S-D keys used to control the Snake" height="250" width="250">
+            <button id="close-button" class="close">X</button>
+            <div class="instructions">
+                <li>Use A to rotate left</li>
+                <li>Use D to rotate right</li>
+                <li>Use W to rotate up</li>
+                <li>Use S to rotate down</li>
+                <li>Press M to open this menu again</li>
+            </div>
+            <div id="reset-button" class="reset" align="center">Reset Game</div>
+            <p class="game-mode-label">Toggle Game Mode:</p>
+            <div id="game-mode-button" class="game-mode" align="center">Practice Mode</div>
+            
+        </div>
+    </div>
+
+    <div id="game-over-modal-container">
+        <div id="game-over-modal">
+            <button id="game-over-close-button" class="close">X</button>
+            <div class="message">Game Over! Your Score was: Would you like to reset the game or continue?</div>
+            <div id="game-over-reset-button" class="reset" align="center">Reset Game</div>
+            <div id="game-over-continue-button" class="continue" align="center">Continue Game</div>
+
+            
+        </div>
+    </div>
 </body>
 </html>
