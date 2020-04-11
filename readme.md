@@ -3,7 +3,7 @@
 A simple Snake game with a twist - it's in 3D!
 
 
-## Getting Started
+## Play the Game by clicking [here] (https://ofekperes.github.io/3DSnake/)
 
 You can play the game by going to: 
 
